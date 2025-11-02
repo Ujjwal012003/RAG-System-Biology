@@ -19,7 +19,9 @@ CHAPTERS_TO_GENERATE = [
     {"chapter_number": "2", "chapter_name": "Electrostatic_Potential_and_Capacitance"},
     {"chapter_number": "3", "chapter_name": "Current_Electricity"},
     {"chapter_number": "4", "chapter_name": "Moving_Charges_and_Magnetism"},
-    {"chapter_number": "5", "chapter_name": "Magnetism_and_Matter"}
+    {"chapter_number": "5", "chapter_name": "Magnetism_and_Matter"},
+    {"chapter_number": "6", "chapter_name": "Electromagnetic_Induction"},
+    {"chapter_number": "7", "chapter_name": "Alternating_Current"}
 ]
 
 
@@ -238,7 +240,7 @@ def run():
             print(f"  {ch['chapter_number']}. {ch['chapter_name'].replace('_', ' ')}")
         print()
         
-        chapter_number = input("Enter chapter number (1-5): ").strip()
+        chapter_number = input("Enter chapter number (1-7): ").strip()
         chapter_name = input("Enter chapter name: ").strip().replace(" ", "_")
     
     run_single_chapter(chapter_number, chapter_name)
